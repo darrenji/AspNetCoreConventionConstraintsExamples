@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using AspNetCoreConventionAndConstraintsExample.Models;
+using AspNetCoreConventionAndConstraintsExample.Infrastructure;
 
 // For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -21,6 +22,8 @@ namespace AspNetCoreConventionAndConstraintsExample.Controllers
         }
 
 
+        //[ActionName("Details")]
+        [ActionNamePrefix("Do")]
         public IActionResult List() => View("Result", new Result {
             Controller = nameof(HomeController),
             Action=nameof(List)
