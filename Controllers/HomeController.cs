@@ -10,7 +10,7 @@ using AspNetCoreConventionAndConstraintsExample.Infrastructure;
 
 namespace AspNetCoreConventionAndConstraintsExample.Controllers
 {
-    [AdditionalActions]
+    //[AdditionalActions]
     public class HomeController : Controller
     {
         // GET: /<controller>/
