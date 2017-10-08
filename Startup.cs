@@ -18,8 +18,8 @@ namespace AspNetCoreConventionAndConstraintsExample
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().AddMvcOptions(options => {
-                options.Conventions.Add(new ActionNamePrefixAttribute("Do"));
-                options.Conventions.Add(new AdditionalActionsAttribute());
+                //options.Conventions.Add(new ActionNamePrefixAttribute("Do"));
+                //options.Conventions.Add(new AdditionalActionsAttribute());
             });
         }
 

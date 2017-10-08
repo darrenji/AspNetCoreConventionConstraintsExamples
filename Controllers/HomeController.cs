@@ -22,6 +22,14 @@ namespace AspNetCoreConventionAndConstraintsExample.Controllers
             });
         }
 
+        [ActionName("Index")]
+        [UserAgent("Edge")]
+        public IActionResult Other() => View("Result", new Result
+        {
+            Controller = nameof(HomeController),
+            Action = nameof(Other)
+        });
+
 
         //[ActionName("Details")]
         //[ActionNamePrefix("Do")]
