@@ -10,6 +10,7 @@ using AspNetCoreConventionAndConstraintsExample.Infrastructure;
 
 namespace AspNetCoreConventionAndConstraintsExample.Controllers
 {
+    [AdditionalActions]
     public class HomeController : Controller
     {
         // GET: /<controller>/
@@ -23,7 +24,8 @@ namespace AspNetCoreConventionAndConstraintsExample.Controllers
 
 
         //[ActionName("Details")]
-        [ActionNamePrefix("Do")]
+        //[ActionNamePrefix("Do")]
+        [AddAction("Details")]
         public IActionResult List() => View("Result", new Result {
             Controller = nameof(HomeController),
             Action=nameof(List)
