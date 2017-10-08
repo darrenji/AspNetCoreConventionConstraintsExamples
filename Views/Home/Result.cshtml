@@ -1,0 +1,21 @@
+﻿@model Result
+
+@{ Layout = null;}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link asp-href-include="lib/bootstrap/dist/css/*.min.css" rel="stylesheet" />
+        <title>Result</title>
+    </head>
+    <body class="panel-body">
+        <div>
+            <table class="table table-condensed table-bordered">
+                <tr><th>Controller</th><td>@Model.Controller</td></tr>
+                <tr><th>Action</th><td>@Model.Action</td></tr>
+        </table>
+    </div>
+    </body>
+</html>
